@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  background-color: #e6f0fe;
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #2a0ffe;
+  color: white;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+.perfil {
+  padding: 20px;
+}
+
+.foto-perfil {
+  width: 120px;
+  border-radius: 50%; /* Hace que la imagen sea redonda */
+  margin-bottom: 15px;
+}
+
+a {
+  color: #2a0ffe;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.intereses-grid{
+  display: flex; /*Las listas estaran lado a lado*/
+  justify-content: center; /*Centra el bloque horizontalmente*/
+  gap: 10px; /*Espaio entre las columnas*/
+  flex-wrap: wrap; /*Si no caben un una linea baja*/
+}
+
+/*Las listas individuales*/
+.intereses-grid ul{
+  list-style: none; /* Quita los puntos normales */
+  padding: 0;
+}
+
+/*Cada interes*/
+.intereses-grid li{
+  font-size: 20px; /*Tamaño de la letra*/
+  margin-bottom: 10px; /*Margen entre c/u*/
+}
+
+/* Estilo general de la sección de portafolio */
+.portafolio {
+  background-color: #fff5e1; /* Color de fondo suave */
+  padding: 30px;             /* Espacio interno */
+  margin-top: 30px;          /* Espacio arriba respecto a lo anterior */
+  border-radius: 10px;       /* Bordes redondeados */
+}
+
+/* Contenedor de todos los proyectos (flex para poner en fila) */
+.proyectos {
+  display: flex;             /* Activa diseño en fila */
+  flex-wrap: wrap;           /* Permite que baje si no cabe */
+  justify-content: center;   /* Centra horizontalmente */
+  gap: 20px;                 /* Espacio entre tarjetas */
+}
+
+/* Estilo para cada tarjeta de proyecto */
+.proyecto {
+  background-color: #ffffff;           /* Fondo blanco */
+  border: 1px solid #ccc;              /* Borde gris claro */
+  padding: 20px;                       /* Espacio interno */
+  width: 250px;                        /* Ancho fijo de la tarjeta */
+  border-radius: 8px;                  /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* Título de cada proyecto */
+.proyecto h3 {
+  margin-top: 0;     /* Quita espacio arriba */
+  font-size: 20px;   /* Tamaño del texto */
+}
+
+/* Descripción del proyecto */
+.proyecto p {
+  font-size: 16px;   /* Tamaño del texto */
+  color: #666;       /* Color gris claro */
+}
+
+/* Enlace que lleva al proyecto */
+.proyecto a {
+  display: inline-block;  /* Para poder poner márgenes */
+  margin-top: 10px;       /* Espacio arriba del enlace */
+  color: #0077cc;         /* Azul */
+  text-decoration: none;  /* Sin subrayado */
+  font-weight: bold;      /* Texto en negrita */
+}
