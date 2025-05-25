@@ -125,3 +125,22 @@ footer {
   front-size: 8px;           /* Tamaño del texto */
 }
 
+/* Contenedor de dos columnas */
+.dos-columnas {
+  display: flex;               /* pone las cajas en fila horizontal */
+  gap: 20px;                   /* espacio entre columnas */
+  margin: 30px auto;           /* margen vertical y centrado */
+  max-width: 800px;            /* ancho máximo */
+  padding: 20px;               /* espacio interior */
+}
+
+/* Cada columna ocupa el mismo espacio */
+.columna {
+  flex: 1;                     /* ambas columnas ocupan el 50% */
+}
+
+/* Estilo opcional para imágenes */
+.columna img {
+  border-radius: 10px;         /* bordes redondeados */
+  max-width: 100%;             /* evita que se desborde */
+}
